@@ -275,7 +275,7 @@ Object.keys(closeBtns).forEach((i) => {
         default:
             closeBtns[i].addEventListener("click", () => {
                 modals[i].classList.remove("open");
-                window.addEventListener('mousedown', onMouseDown)
+                window.addEventListener('pointerdown', onMouseDown)
             });
             break;
     }
